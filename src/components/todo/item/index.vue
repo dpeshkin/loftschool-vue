@@ -6,7 +6,10 @@
             @keydown.enter="changeItem(index, newName)")
         div
             button.change(@click="showInput()") Изменить
-            button.view Посмотреть
+            router-link(
+                tag='button' 
+                :to="{name:'item', params: {id: newName}}"
+            ) Посмотреть
             button.delete(@click="deleteItem(index)") Удалить
 </template>
 <script>

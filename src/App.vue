@@ -1,19 +1,21 @@
 <template lang="pug">
 	#app
-		todo
-		hello-comp
-		app-form
-		hello-props(
-			v-bind:message="msg",
-			v-bind:text="text2"
-		)
-			h3 Меня прислали из app.vue
-			h4 И меня
-			div(slot="first")
-				h4 меня прислали в именованный слот из app.vue
-			div(slot="second")
-				h4 а меня в другой слот оттуда же
-		list
+		router-view <!--подключаем роутер-->
+		//- todo
+		//- hello-comp
+		//- app-form
+		//- hello-props(
+		//- 	v-bind:message="msg",
+		//- 	v-bind:text="text2"
+		//- )
+		//- 	h3 Меня прислали из app.vue
+		//- 	h4 И меня
+		//- 	div(slot="first")
+		//- 		h4 меня прислали в именованный слот из app.vue
+		//- 	div(slot="second")
+		//- 		h4 а меня в другой слот оттуда же
+		//- list
+		
 </template>
 <script>
 export default {

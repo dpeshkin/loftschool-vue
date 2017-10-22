@@ -4,7 +4,7 @@
         h4 новое задание
         input(v-model="newTodo",
             @keydown.enter="addItem()")
-        H2 Список заданий {{newTodo}}
+        H2 Список заданий
         ul
             li(v-for="item, index in items")
                 todo-item(:header="item",
